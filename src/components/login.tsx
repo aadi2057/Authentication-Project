@@ -37,7 +37,7 @@ const Login: React.FC<Props> = ({ history }) => {
     if (User && User.email === email && User.password === password) {
       alert("Successful Login");
       localStorage.setItem("authenticated", true.toString());
-      history.push("/");
+      history.push("/profile");
 
       window.location.reload();
     } else {
